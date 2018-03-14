@@ -1,0 +1,58 @@
+﻿  Cleaning remote project directory
+  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.60.131'
+  Starting remote build
+  Compiling sources:
+  itcastlog.c
+  itcast_asn1_der.c
+  keymngserverop.c
+  keymng_dbop.c
+  keymng_msg.c
+  keymng_shmop.c
+  md5.c
+  myipc_shm.c
+  poolsocket.c
+  server.c
+  socketutil.c
+  Linking objects
+  /home/oracle/projects/SecMngServer/obj/x64/Debug/keymngserverop.o: In function `MngServer_InitInfo':
+  /home/oracle/projects/SecMngServer/keymngserverop.c:30: undefined reference to `IC_DBApi_PoolInit'
+  /home/oracle/projects/SecMngServer/obj/x64/Debug/keymngserverop.o: In function `MngServer_Agree':
+  /home/oracle/projects/SecMngServer/keymngserverop.c:90: undefined reference to `IC_DBApi_ConnGet'
+  /home/oracle/projects/SecMngServer/keymngserverop.c:96: undefined reference to `IC_DBApi_BeginTran'
+  /home/oracle/projects/SecMngServer/keymngserverop.c:103: undefined reference to `IC_DBApi_Rollback'
+  /home/oracle/projects/SecMngServer/keymngserverop.c:106: undefined reference to `IC_DBApi_ConnFree'
+  /home/oracle/projects/SecMngServer/keymngserverop.c:110: undefined reference to `IC_DBApi_Commit'
+  /home/oracle/projects/SecMngServer/keymngserverop.c:111: undefined reference to `IC_DBApi_ConnFree'
+  /home/oracle/projects/SecMngServer/obj/x64/Debug/keymng_dbop.o: In function `KeyMngsvr_DBOp_GetKeyID':
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:47: undefined reference to `IC_DBApi_ExecSelSql'
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:55: undefined reference to `IC_DBApi_ExecNSelSql'
+  /home/oracle/projects/SecMngServer/obj/x64/Debug/keymng_dbop.o: In function `KeyMngsvr_DBOp_WriteSecKey':
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:85: undefined reference to `IC_DBApi_GetDBTime'
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:94: undefined reference to `IC_DBApi_Der2Pem'
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:109: undefined reference to `IC_DBApi_ExecNSelSql'
+  /home/oracle/projects/SecMngServer/obj/x64/Debug/keymng_dbop.o: In function `IC_DBApi_Pem2Der_Test2':
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:143: undefined reference to `IC_DBApi_Der2Pem'
+  /home/oracle/projects/SecMngServer/keymng_dbop.c:155: undefined reference to `IC_DBApi_Pem2Der'
+  collect2: ld 返回 1
+  
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\obj\x64\Debug\keymngserverop.o : error : 
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(30): error : undefined reference to `IC_DBApi_PoolInit'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\obj\x64\Debug\keymngserverop.o : error : 
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(90): error : undefined reference to `IC_DBApi_ConnGet'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(96): error : undefined reference to `IC_DBApi_BeginTran'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(103): error : undefined reference to `IC_DBApi_Rollback'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(106): error : undefined reference to `IC_DBApi_ConnFree'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(110): error : undefined reference to `IC_DBApi_Commit'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymngserverop.c(111): error : undefined reference to `IC_DBApi_ConnFree'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\obj\x64\Debug\keymng_dbop.o : error : 
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(47): error : undefined reference to `IC_DBApi_ExecSelSql'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(55): error : undefined reference to `IC_DBApi_ExecNSelSql'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\obj\x64\Debug\keymng_dbop.o : error : 
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(85): error : undefined reference to `IC_DBApi_GetDBTime'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(94): error : undefined reference to `IC_DBApi_Der2Pem'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(109): error : undefined reference to `IC_DBApi_ExecNSelSql'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\obj\x64\Debug\keymng_dbop.o : error : 
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(143): error : undefined reference to `IC_DBApi_Der2Pem'
+C:\Users\xy\source\repos\SecMngServer\SecMngServer\keymng_dbop.c(155): error : undefined reference to `IC_DBApi_Pem2Der'
